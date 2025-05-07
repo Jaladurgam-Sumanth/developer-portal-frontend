@@ -2,9 +2,7 @@
 
 import FileList from './list/page';
 import { 
-  AutoFixHigh, 
-  NoiseAware, 
-  GraphicEq, 
+  NoiseAware,
   SurroundSound, 
   Tune, 
   SettingsVoice 
@@ -14,6 +12,7 @@ import React, { useState } from  'react';
 import { StyledCard, IconWrapper, ConfigTitle } from './styled';
 import FileUploadModal from '@/components/FileUpload/FileUploadModal';
 import { useDispatch } from 'react-redux';
+import type { AppDispatch } from '@/store';
 import { setSelectedConfig } from '@/store/upload/uploadSlice';
 
 const voiceConfig = [

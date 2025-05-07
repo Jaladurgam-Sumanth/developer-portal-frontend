@@ -15,6 +15,7 @@ export function APIKeyTableRow({ apiKey }: APIKeyTableRowProps) {
   const dispatch = useDispatch<AppDispatch>();
   const [copied, setCopied] = useState(false);
 
+  console.log(copied);
   const copyToClipboard = async () => {
     await navigator.clipboard.writeText(apiKey.key);
     setCopied(true);

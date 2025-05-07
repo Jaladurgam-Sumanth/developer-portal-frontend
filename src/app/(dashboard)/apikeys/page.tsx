@@ -69,7 +69,7 @@ export default function APIKeysPage() {
           <VpnKeyIcon sx={{ fontSize: 48, color: 'text.secondary', mb: 2 }} />
           <h3 className="text-lg font-medium mb-2">No API Keys</h3>
           <p className="text-center mb-4 text-gray-500">
-            You haven't created any API keys yet. Create one to get started.
+            You haven&#39;t created any API keys yet. Create one to get started.
           </p>
           <Button 
             variant="outlined"

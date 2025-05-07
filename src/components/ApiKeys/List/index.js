@@ -34,7 +34,7 @@ const CardView = ({ title, subheader, apiKeys, isPrivate = false }) => {
   const handleDeleteApiKey = (id) => {
     dispatch(deleteApiKey(id));
   };
-
+  console.log(isPrivate);
   const toggleKeyVisibility = (id) => {
     setVisibleKeys((prev) => ({
       ...prev,
