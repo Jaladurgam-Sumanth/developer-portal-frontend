@@ -33,7 +33,7 @@ export const userDetails = createAsyncThunk(
   'users/me',
   async (_, {rejectWithValue}) => {
     try {
-      const response = await api.get('/auth/users/me', {
+      const response = await api.get('/auth/v1/users/me', {
         withCredentials: true,
       });
       console.log("User data", response);
@@ -48,7 +48,7 @@ export const register = createAsyncThunk(
   'auth/register',
   async (userData: RegisterData, { rejectWithValue }) => {
     try {
-      const response = await api.post('/auth/users', userData,  {
+      const response = await api.post('/auth/v1/users', userData,  {
         withCredentials: true,
       });
       return response.data;
